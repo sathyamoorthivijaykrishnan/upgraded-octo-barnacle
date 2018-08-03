@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: DC-FOODS-SERVICE
+server.port: 9092
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9091/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+management.endpoints.web.exposure.include: '*'
